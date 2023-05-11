@@ -50,7 +50,7 @@ Create the route table. > Name edit > Select personal VPC > create
 
 Edit our subnet associations. > Edit > Select subnet > Click routes > Click edit route.
 
-- Edit our routes as below and add our internet gateaway ID `igw-047202aedb1d756ee` with the destination being `0.0.0.0/0
+- Edit our routes as below and add our internet gateaway ID `igw-047202aedb1d756ee` with the destination being `0.0.0.0/0`
 - Save changes
 
 <h3>Step 7</h3>
