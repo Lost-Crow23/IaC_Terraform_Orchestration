@@ -169,16 +169,16 @@ resource "aws_instance" "app_instance"{
 
 	# Which subnet
 
-	subnet_id = "${aws_subnet.tech221_oleg_publicSubnet.id}"
+	subnet_id = "${aws_subnet.tech221_ruhal_publicSubnet.id}"
 
         # Add security groups
 
-	security_groups = ["${aws_security_group.tech221_oleg_AppSG.id}"]
+	security_groups = ["${aws_security_group.tech221_ruhal_AppSG.id}"]
 
 	# what would you like to name it
 	tags = {
 	
-	  Name = "tech221_oleg_terraform_app"
+	  Name = "tech221_ruhal_terraform_app"
 
 	} 
 
