@@ -151,6 +151,7 @@ resource "aws_security_group" "tech221_ruhal_AppSG" {
     Name = "tech221_ruhal_AppSG"
   }
 }
+
 ```
 
 <h3>Step 9: Launching the instance</h3>
@@ -184,4 +185,5 @@ resource "aws_instance" "app_instance"{
 	} 
 
 }
+
 ```
