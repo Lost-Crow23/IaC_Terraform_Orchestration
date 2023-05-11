@@ -1,6 +1,6 @@
 AWS Terraform
 
-Diagram
+![image](https://github.com/Lost-Crow23/IaC_Terraform_Orchestration/assets/126012715/75aee4ac-373f-45e2-b85f-8da0d37f4578)
 
 Infrastructure as code (IaC) tools allow you to manage infrastructure with configuration files rather than through a graphical user interface. IaC allows you to build, change, and manage your infrastructure in a safe, consistent, and repeatable way by defining resource configurations that you can version, reuse, and share.
 
