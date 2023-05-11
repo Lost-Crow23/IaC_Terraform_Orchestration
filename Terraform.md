@@ -134,6 +134,14 @@ Input variables are used to make it easier to use and make your configuration mo
 <h3>Step 1</h3>
 
 - In `vs code` make a `.gitignore` file and put the `variables.tf` so that we can ignore the variable folder.
+```
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.lock.hcl
+variable.tf
+
+```
 - Create a new file called `variables.tf` so you can script your hard code variables
 
 <h3>Step 2</h3>
