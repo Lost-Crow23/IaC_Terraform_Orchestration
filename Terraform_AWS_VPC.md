@@ -20,6 +20,7 @@ We have used "public" and "private" as a name for the prefixes, however you may 
 <h3>Step 2/h3>
 
 - Choose `vpc only` and name the desired vpc e.g `ruhal-tech221-terraform-vpc`
+  
 - Apply a `CIDR` block `10.0.0.0/16`
 
 <h3>Step 3</h3>
