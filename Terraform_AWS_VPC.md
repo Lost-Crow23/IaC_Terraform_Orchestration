@@ -9,6 +9,7 @@
 <h3>Create a VPC</h3>
 
 <h3>Step 1</h3>
+
 ```
 # Create a VPC on AWS
 
@@ -20,6 +21,7 @@ resource "aws_vpc" "tech221_ruhal_terraform_vpc" {
     Name = "tech221_ruhal_terraform_vpc"
   }
 }
+
 ```
 
 <h3>Step 2: Add a internet gateaway</h3>
