@@ -17,7 +17,7 @@ We have used "public" and "private" as a name for the prefixes, however you may 
 
 - Create VPC 
 
-<h3>Step 2/h3>
+<h3>Step 2</h3>
 
 - Choose `vpc only` and name the desired vpc e.g `ruhal-tech221-terraform-vpc`
   
