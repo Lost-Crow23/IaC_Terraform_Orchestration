@@ -25,7 +25,7 @@ resource "aws_vpc" "tech221_ruhal_terraform_vpc" {
 <h3>Step 2: Add a internet gateaway</h3>
 
 ```
-# create a Gateway on AWS
+#create a Gateway on AWS
 resource "aws_internet_gateway" "tech221_ruhal_terraform_gw" {
   vpc_id = aws_vpc.tech221_ruhal_terraform_vpc.id
 
