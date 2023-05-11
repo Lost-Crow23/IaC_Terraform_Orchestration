@@ -2,6 +2,9 @@
 
 ![image](https://github.com/Lost-Crow23/IaC_Terraform_Orchestration/assets/126012715/aac128a1-bc37-4b29-813b-04dd452cf0f8)
 
+![IaC vpc diagramm](https://github.com/Lost-Crow23/IaC_Terraform_Orchestration/assets/126012715/5ee6e9e9-9f1d-422e-b7f4-47c9bd41a8e2)
+
+
 An private IP was assigned to me for this task as 10.0.9.0/24 so anywhere you see this, replace it with your private IP.
 
 - For consistency we'll also be using,
