@@ -119,9 +119,67 @@ resource "aws_instance" "app_instance" {
 ```
 <h3>Final Iteration</h3>
 
-
 - Use `terraform init` to initialise and then do `terraform plan` to show what actions terraform will take to achieve the desired infrastructure state declared in the conifg files.
 - `terraform apply` to apply the changes made within terraform and execute the file and enter the `value: yes` when prompted.
 - Once applied an instance from the ami should be running
+
+<h2>Defining Input Variables</h2>
+
+Input variables are used to make it easier to use and make your configuration more flexible.
+
+<h3>Pre-requisites</h3>
+
+- Have a previously made main.tf file with all the conifigurations as above.
+
+<h3>Step 1</h3>
+
+- In `vs code` make a `.gitignore` file and put the `variables.tf` so that we can ignore the variable folder.
+- Create a new file called `variables.tf` so you can script your hard code variables
+
+<h3>Step 2</h3>
+
+- Make a block defining the instance name with a variable as below:
+```
+# variables.tf
+
+# name the variable and the ami ID is from the AMI instance.
+variable "webapp_ami_id" {
+    default = "ami-0fb7109a40e90112d"
+}
+```
+
+<h3>Step 3</h3>
+ 
+- Edit the main.tf folder as below:
+
+```
+provider "aws" {
+	region = "eu-west-1"
+}
+# let's create a service on AWS
+# which service -EC2
+resource "aws_vpc_endpoint_id" "main" {
+	# which AMI to use
+	#ami = "ami-0fb7109a40e90112d"
+	ami = var.webapp_ami_id
+	instance_type = "t2.micro"
+	# do you need the public IP
+	associate_public_ip_address = true
+	tags = { 
+	  Name = "tech221_ruhal_terraform_app"
+
+	}
+}
+```
+
+<h3>Step 4</h3>
+
+- Save the updated main.tf file and Apply the configuration on your gitbash terminal. 
+`terraform apply`
+- Should execute and run the instance
+
+You can also set the variables without having to avoid to enter them repeatedly as you execute commands.
+
+
 
 
