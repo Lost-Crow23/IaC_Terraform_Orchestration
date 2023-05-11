@@ -91,8 +91,9 @@ resource "aws_route_table_association" "ruhal_private_association" {
 	subnet_id = aws_subnet.tech221_ruhal_privateSubnet.id
 	route_table_id = aws_route_table.tech221_ruhal_privateRT.id
 }
-
+```
 <h3>Step 6: Associate the public subnet to the public route table</h3>
+
 ```
 # Creating Route association
 
