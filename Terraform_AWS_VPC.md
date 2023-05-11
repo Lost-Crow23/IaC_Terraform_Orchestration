@@ -22,7 +22,7 @@ resource "aws_vpc" "tech221_ruhal_terraform_vpc" {
 }
 ```
 
-<h3>Add a internet gateaway</h3>
+<h3>Step 2: Add a internet gateaway</h3>
 
 ```
 # create a Gateway on AWS
@@ -35,7 +35,7 @@ resource "aws_internet_gateway" "tech221_ruhal_terraform_gw" {
 }
 ```
 
-h3>Add a Route Table</h3>
+h3>Step 3: Add a Route Table</h3>
 
 ```
 # Create a public route table on AWS
@@ -64,7 +64,7 @@ resource "aws_route_table" "tech221_ruhal_privateRT" {
   }
 }
 ```
-<h3>Create a public subnet</h3>
+<h3>Step 4: Create a public subnet</h3>
 
 ```
 # Create a Public Subnet in VPC
@@ -82,7 +82,7 @@ resource "aws_subnet" "tech221_ruhal_publicSubnet" {
 }
 ```
 
-<h3>Create a private subnet</h3>
+<h3>Step 5: Create a private subnet</h3>
 
 ```
 # Creating Route association private Subnet
@@ -92,7 +92,7 @@ resource "aws_route_table_association" "ruhal_private_association" {
 	route_table_id = aws_route_table.tech221_ruhal_privateRT.id
 }
 
-<h3>Associate the public subnet to the public route table</h3>
+<h3>Step 6: Associate the public subnet to the public route table</h3>
 ```
 # Creating Route association
 
@@ -102,7 +102,7 @@ resource "aws_route_table_association" "ruhal_public_association" {
 }
 
 ```
-<h3>Associate the Private subnet to the Private RT</h3>
+<h3>Step 7: Associate the Private subnet to the Private RT</h3>
 
 ```
 # Creating Route association 
@@ -112,7 +112,7 @@ resource "aws_route_table_association" "ruhal_private_association" {
 	route_table_id = aws_route_table.tech221_ruhal_privateRT.id
 }
 ```
-<h3>Creating the Security groups for the app</h3>
+<h3>Step 8: Creating the Security groups for the app</h3>
 ```
 # Creating a security group EC2 app
 
@@ -153,7 +153,7 @@ resource "aws_security_group" "tech221_ruhal_AppSG" {
 }
 ```
 
-h3>Launching the instance</h3>
+h3>Step 9: Launching the instance</h3>
 
 ```
 # within our public subnet
@@ -184,4 +184,3 @@ resource "aws_instance" "app_instance"{
 
 }
 ```
-
