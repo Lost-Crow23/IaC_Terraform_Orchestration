@@ -156,7 +156,8 @@ resource "aws_security_group" "tech221_ruhal_AppSG" {
 h3>Step 9: Launching the instance</h3>
 
 ```
-# within our public subnet
+#within our public subnet
+
 resource "aws_instance" "app_instance"{
 	# which ami to use
 	ami = var.aim_id
