@@ -117,7 +117,7 @@ resource "aws_instance" "app_instance" {
 }
 
 ```
-<h3>Final Iteration/h3>
+<h3>Final Iteration</h3>
 
 
 - Use `terraform init` to initialise and then do `terraform plan` to show what actions terraform will take to achieve the desired infrastructure state declared in the conifg files.
