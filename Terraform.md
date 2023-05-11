@@ -1,6 +1,7 @@
 terraform
 
-'''
+```
+
 #Terraform script to create a service on the cloud
 #Let's set up our cloud provider with terraform
 
@@ -25,4 +26,4 @@ resource "aws_instance" "app_instance" {
 	}
 }
 
-'''
+```
